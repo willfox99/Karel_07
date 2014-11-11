@@ -1,17 +1,36 @@
-/**
-*
-* Description of the program goes here  // provide a brief description
-*
-* @author <Your Name here>  // replace <...> with your name
-* @version <date/of/completion> // replace <...> with the date
-*/
+  	//Torbert, e-mail: smtorbert@fcps.edu
+	//version 4.22.2003
 
-import edu.fcps.karel2.Display;
-import edu.fcps.karel2.Robot;
-
-public class Lab06 {
-
-     public static void main(String[] args) {
-          // TODO Your code goes here
-     }
-}
+   import edu.fcps.karel2.Display;
+   import javax.swing.JOptionPane;
+    public class Lab07
+   {
+       public static void main(String[] args) 
+      {
+         String filename = JOptionPane.showInputDialog("What robot world?");
+         String type = JOptionPane.showInputDialog("What type of climber?");
+         String avenue = JOptionPane.showInputDialog("What x-coordinate?");
+         int x = Integer.parseInt(avenue);
+      
+         Display.openWorld("maps/"+filename+".map");
+         Display.setSize(17, 15);
+         Display.setSpeed(10);
+      
+         if(type.equals("Climber"))
+         {
+            Mountain.explore( new Climber(x) );
+         }
+         else if(type.equals("HillClimber"))
+         {
+            Mountain.explore( new HillClimber(x) );
+         }
+         else if(type.equals("StepClimber"))
+         {
+            Mountain.explore( new StepClimber(x) );
+         }
+         else
+         {
+            System.out.println("Invalid robot type.");
+         }
+      }
+   }
