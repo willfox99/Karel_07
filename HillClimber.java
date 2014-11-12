@@ -1,8 +1,8 @@
 /**
- * HillClimbers climb slowly rising mountains, two steps across for every step of rise
+ * HillClimbers move two steps across for each step of rise
  * 
- * @author kentcollins
- * @version 12 November, 2014
+* @author <...>
+* @version <...>
  * 
  */
 
@@ -11,38 +11,22 @@ import edu.fcps.karel2.Display;
 public class HillClimber extends Climber {
 
 	public HillClimber(int x) {
-		super(x);
+		//TODO Call the appropriate superclass constructor
 	}
 	
 	public void climbUpRight() {
-		turnLeft();
-		move();
-		turnRight();
-		move();
-		move();
+		//TODO Climb up one and across two
 	}
 	
 	public void climbUpLeft() {
-		turnRight();
-		move();
-		turnLeft();
-		move();
-		move();
+		//TODO Climb up one and across two
 	}
 	
 	public void climbDownRight() {
-		move();
-		move();
-		turnRight();
-		move();
-		turnLeft();
+		//TODO Climb down one and across two
 	}
 	
 	public void climbDownLeft() {
-		move();
-		move();
-		turnLeft();
-		move();
-		turnRight();
+		//TODO Climb down one and across two
 	}
 }

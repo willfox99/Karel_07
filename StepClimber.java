@@ -1,8 +1,8 @@
 /**
  * StepClimbers climb steeply rising mountains, one step across for every step of rise
  * 
- * @author kentcollins
- * @version 12 November, 2014
+* @author <...>
+* @version <...>
  * 
  */
 import edu.fcps.karel2.Display;
@@ -10,34 +10,22 @@ import edu.fcps.karel2.Display;
 public class StepClimber extends Climber {
 
 	public StepClimber(int x) {
-		super(x);
+		//TODO Call the appropriate superclass constructor
 	}
 	
 	public void climbUpRight() {
-		turnLeft();
-		move();
-		turnRight();
-		move();
+		//TODO Climb one step up and one across
 	}
 	
 	public void climbUpLeft() {
-		turnRight();
-		move();
-		turnLeft();
-		move();
+		//TODO Climb one step up and one across
 	}
 	
 	public void climbDownRight() {
-		move();
-		turnRight();
-		move();
-		turnLeft();
+		//TODO Climb one step down and one across
 	}
 	
 	public void climbDownLeft() {
-		move();
-		turnLeft();
-		move();
-		turnRight();
+		//TODO Climb one step down and one across
 	}
 }
