@@ -18,15 +18,15 @@
       
          if(type.equals("Climber"))
          {
-            Mountain.explore( new Climber(x) );
+            Mountain.explore( new Climber(x, 1, Display.NORTH, 1) );
          }
          else if(type.equals("HillClimber"))
          {
-            Mountain.explore( new HillClimber(x) );
+            Mountain.explore( new Climber(x, 1, Display.NORTH, 1) );
          }
          else if(type.equals("StepClimber"))
          {
-            Mountain.explore( new StepClimber(x) );
+            Mountain.explore( new Climber(x, 1, Display.NORTH, 1) );
          }
          else
          {
